@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="gify_favicon.png">
+    <title>GIF Generator</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">✨ GIF Generator ✨</h1>
+        <h2>Random GIF</h2>
+        <div class="box" id="box1">
+            <div id="loadingAnimation1" class="loading-animation"></div>
+            <img id="randomGifImage" src="" alt="">
+        </div>
+        <button class="button" id="button1">Random GIF</button>
+        <button id="downloadButton" class="button">Download</button>
+        <h2>Generate GIF</h2>
+        <div class="box" id="box2">
+            <div id="loadingAnimation2" class="loading-animation"></div>
+            <img id="gifImage" src="" alt="">
+        </div>
+        <form id="form">
+            <input type="text" id="search" name="search" value="Tony Stark">
+            <button type="submit" class="button" id="button2">Generate</button>
+        </form>
+        <button id="downloadButton2" class="button">Download</button>
+    </div>
+</body>
+</html>

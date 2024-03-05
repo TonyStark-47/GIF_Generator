@@ -1,0 +1,173 @@
+body, .container{
+    background-color: #5E1675;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Animating the title */
+@keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .title {
+            font-size: 5rem;
+            font-weight: bold;
+            background: linear-gradient(to right, #FFD23F, #F37736, #ED8F03, #EE4266, #5E1675, #7BC043, #0392D0);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: gradient-animation 5s ease infinite;
+        }
+
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem; 
+    color: #FFD23F;
+}
+
+.box{
+    width: 500px;
+    height: 300px;
+    background-color: #EE4266;
+    border: 1px solid #000;
+    padding: 20px;
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box2{
+    background-color: #45a049;
+}
+
+#gifImage, #randomGifImage{
+    max-width: 100%;  /* This will make sure the GIF doesn't exceed the width of the box */
+    max-height: 100%;
+}
+
+#form{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#form input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+/* applying styles to the input element */
+input[type="text"] {
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.button{
+    border: none;
+    color: #5E1675;
+    background-color: #FFD23F;
+    text-decoration: none;
+    padding: 15px 200px;
+    display: block;
+    cursor: pointer;
+    margin: 4px 2px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bolder;
+    transition: background-color 0.3s;
+}
+#downloadButton, #downloadButton2{
+    color: #5E1675;
+    background-color: #45a049;
+    padding: 15px 50px;
+
+}
+#downloadButton:hover, #downloadButton2:hover{
+    background-color: #EE4266;
+}
+
+.button:hover{
+    background-color: #45a049;
+}
+.button:active{
+    background-color: #EE4266;
+}
+
+.loading-animation{
+    /* Add styles for the loading animation */
+    border: 5px solid #FFD23F; 
+    border-top: 5px solid #5E1675; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* for mobiles */
+@media only screen and (max-width: 768px) {
+  body, .container {
+    padding: 10px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    animation-duration: 3s; /* Adjust the animation duration for mobile */
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .box {
+    width: 90%; /* Adjust box width for mobile */
+    height: 200px; /* Adjust box height for mobile */
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  #form {
+    width: 90%; /* Adjust form width for mobile */
+  }
+
+  #form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px; /* Adjust font size for input text */
+  }
+
+  .button {
+    padding: 12px 50px; /* Adjust padding for mobile */
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+
+  #downloadButton,
+  #downloadButton2 {
+    padding: 12px 30px; /* Adjust padding for mobile */
+  }
+
+}
